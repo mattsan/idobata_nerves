@@ -3,16 +3,11 @@ defmodule Messenger do
   Documentation for Messenger.
   """
 
-  @doc """
-  Hello world.
+  @hook Application.get_env(:messenger, :idobata_hook)
 
-  ## Examples
-
-      iex> Messenger.hello()
-      :world
-
-  """
-  def hello do
-    :world
+  def post(message) do
+    @hook
+    |> ExIdobata.new_hook()
+    |> ExIdobata.post(source: message)
   end
 end

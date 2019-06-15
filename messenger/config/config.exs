@@ -9,9 +9,10 @@ use Mix.Config
 # third-party users, it should be done in your "mix.exs" file.
 
 # You can configure your application as:
-#
-#     config :messenger, key: :value
-#
+
+config :messenger,
+  idobata_hook: System.get_env("IDOBATA_HOOK")
+
 # and access this configuration in your application as:
 #
 #     Application.get_env(:messenger, :key)
