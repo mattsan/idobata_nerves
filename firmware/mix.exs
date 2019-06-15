@@ -34,6 +34,8 @@ defmodule Firmware.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
+      {:messenger, path: "../messenger"},
+
       # Dependencies for all targets
       {:nerves, "~> 1.4", runtime: false},
       {:shoehorn, "~> 0.4"},
