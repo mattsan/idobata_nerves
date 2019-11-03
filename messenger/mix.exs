@@ -20,7 +20,7 @@ defmodule Messenger.MixProject do
 
   defp deps do
     [
-      {:ex_idobata, github: "mattsan/ex_idobata"}
+      {:ex_idobata, "~> 0.1"}
     ]
   end
 end

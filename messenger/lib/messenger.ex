@@ -3,11 +3,10 @@ defmodule Messenger do
   Documentation for Messenger.
   """
 
-  @hook Application.get_env(:messenger, :idobata_hook)
+  @room_uuid Application.get_env(:messenger, :idobata_hook)
 
   def post(message) do
-    @hook
-    |> ExIdobata.new_hook()
-    |> ExIdobata.post(source: message)
+    ExIdobata.Hook.contents(source: message)
+    |> ExIdobata.Hook.post(@room_uuid)
   end
 end

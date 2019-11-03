@@ -27,7 +27,7 @@ Raspberry Pi Zero WH を利用して動作を確認しました。
 | variable | description |
 |---|---|
 | `MIX_TARGET` | ターゲットデバイス |
-| `IDOBATA_HOOK` | idobata にカスタムフックの URL |
+| `IDOBATA_HOOK` | idobata にカスタムフックの URL の ROOM UUID |
 | `NERVES_NETWORK_SSID` | WiFi の SSID |
 | `NERVES_NETWORK_PSK` | WiFi のパスワード |
 
